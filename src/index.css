@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main_div{
+  width: 100%;
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.center_div{
+  width: 30vw;
+  height: 80vh;
+  background-color: aliceblue;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.center_div h1{
+  background-color: rgb(185, 119, 247);
+  padding: 5px;
+}
+
+.center_div input{
+  text-align: center;
+  height: 30px;
+  background: transparent;
+  font-size: 20px;
+  top: 25px;
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid blueviolet;
+  outline: none;
+}
+
+.btn{
+  width: 50px;
+  height: 50px;
+  color:chocolate;
+  background-color: antiquewhite;
+  border-color: transparent;
+  border: none;
+  border-radius: 50%;
+  font-size: 40px;
+  margin-left: 10px;
+  font-weight: 500;
+  outline: none;
+}
+
+.btn:hover
+{
+  background-color:green;
+}
+
+.center_div ul{
+  list-style: none;
+  height: 60vh;
+  overflow: scroll;
+}
+
+.created_lists{
+  display: flex;
+  flex-direction: row;
+}
+
+#cross{
+  color: rgb(65, 47, 35);
+  margin: 10px;
+  font-size: large;
+}
+
+#cross:hover{
+  color: red;
+}
+
+.created_lists li{
+  font-size: large;
+  font-weight: bolder;
+  margin-top: 6px;
+}
+
+@media only screen and (max-width:950px){
+.center_div{
+  width: 50vw;
+}
+}
+
+@media only screen and (max-width:550px){
+  .center_div{
+    width: 75vw;
+  }
+  }
+
+  @media only screen and (max-width:350px){
+    .center_div{
+      width: 80vw;
+    }
+    }
